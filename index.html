@@ -27,18 +27,24 @@
                 <div class = "icon">
                     <img class = "circleimg" src = "eyelogo.png">
                     </br>
-                    </br>
                     <h3>LesionVision</h3>
                 </div>
+                </br>
+                </br>
                 <div class = "links">
                     <div class = "link">
-                        <button><a href = "index.html">Home</a></button>
+                        <button class = "flex-items"><a href = "index.html">Home</a></button>
+                    </div>
+                    <!-- <div class = "link">
+                        <button class = "flex-items"><a href = "resources.html">Resources</a></button>
+                    </div> -->
+                    <div class = "link">
+                        <button class = "flex-items"><a href = "interpretation.html">Interpretation</a></button>
                     </div>
                     <div class = "link">
-                        <button><a href = "resources.html">Resources</a></button>
+                        <button class = "flex-items"><a href = "map.html">Map of Hospitals</a></button>
                     </div>
                 </div>
-
             </div>
             <div class = "model">
                 <div class = "title">
@@ -57,8 +63,8 @@
                 <img id="image" width="100" height="75"></img>   
                 <button><a onclick="predict()" class="waves-effect waves-light btn">Classify Image</a></button>
                 <h3>Prediction</h3>
-                <b><h1 id="prediction"></h1></b>
-                <h1 id="probability"></h1>
+                <b><h3 id="prediction"></h3></b>
+                <h3 id="probability"></h3>
             </div>
         </section>
    </main>
@@ -67,12 +73,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
 
-    <!-- Javascript allows us to apply logic to our UI elements and programmatically control the website -->
-    <!-- We'll be using Tensorflow JS to perform our model inference -->
-
     <script>
         
-        // Initialize our HTML elements as JS objects
+        // html -> js objects
 
         var imgtag = document.getElementById("image")
         var prediction_text = document.getElementById("prediction")
@@ -85,7 +88,7 @@
 
         var classes = ['Actinic Keratoses', 'Basal Cell Carcinoma', 'Benign Keratoses', 'Dermatofibroma', 'Melanoma', 'Melanocytic Nevus', 'Vascular Lesion']
 
-        // Function to perform prediction on our Tensorflow JS Model
+        // perform prediction
 
         async function predict(){
 
@@ -117,7 +120,7 @@
             }
         }
 
-        // Function to Select our Image and Display it
+        // select & display
 
         function onFileSelected(event) {
 
@@ -138,7 +141,6 @@
             
         }
 
-        // Function to Select our Image and Display it
 
         async function loadModel(){
             console.log("Loading Model")
