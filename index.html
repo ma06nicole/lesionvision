@@ -13,6 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
   </head>
 
 <body>
@@ -21,6 +26,8 @@
             <div class = "dashboard">
                 <div class = "icon">
                     <img class = "circleimg" src = "eyelogo.png">
+                    </br>
+                    </br>
                     <h3>LesionVision</h3>
                 </div>
                 <div class = "links">
@@ -50,11 +57,12 @@
                 <img id="image" width="100" height="75"></img>   
                 <button><a onclick="predict()" class="waves-effect waves-light btn">Classify Image</a></button>
                 <h3>Prediction</h3>
-                <b><p id="prediction"></p></b>
-                <p id="probability"></p>
+                <b><h1 id="prediction"></h1></b>
+                <h1 id="probability"></h1>
             </div>
         </section>
    </main>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
@@ -141,8 +149,7 @@
             progressbar.style.display = "none"
         }
 
-        loadModel()
-        
+        loadModel()   
     </script>
 </body>
 </html>
