@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+h1{
+    font-weight: 600;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+a, p{
+    font-weight: 600;
+    opacity: 0.8;
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    border-radius: 3rem;
+    background-color: #d7e3fc;
+    opacity: 80%;
+    border-color: #abc4ff;
+    padding: 15px 15px;
+    font-size: 0.8rem;
+}
+
+button:hover{
+    background-color: #abc4ff;
+}
+
+h3{
+    font-weight: 600;
+    opacity: 0.8;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #d7e3fc, #abc4ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    border-radius: 3rem;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+
+.dashboard{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    border-radius: 3rem;
+}
+
+.model{
+    flex:2;
+}
+
+.link{
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+
+.link h2{
+    padding: 0rem 2rem;
+}
+
+
+.circleimg {
+    border-radius: 50%;
+    width: 100px;
+  }
+
+/* MODEL */
+
+.title{
+    margin-bottom: 3rem;
+}
+
+.model{
+    margin: 5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.model h1{
+    text-align:center;
+}
